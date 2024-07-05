@@ -1,0 +1,378 @@
+body{
+    background-color: rgb(21, 21, 21);
+    color: rgb(4, 192, 4);
+}
+.container{
+    position: absolute;
+    left: 56px;
+    display: inline-block;
+}
+.text{
+    font-size: 1.25em;
+    letter-spacing: 2.5px;
+    font-family: monospace;
+    border-right: 2.5px solid rgb(4, 192, 4);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2.3s steps(32),
+    cursor 0.3s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+@keyframes typing {
+    from {width:0}
+}
+.riddler{
+    position: absolute;
+    left: 17px;
+    font-family: monospace;
+    font-size: large;
+}
+.yn{
+    position: absolute;
+    border: solid;
+    border-radius: 6px;
+    background: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 50px;
+    padding-inline: 5px;
+    border-color: rgb(4, 192, 4);
+    color: rgb(4, 192, 4);
+    border-width: 1px;
+    font-family: monospace;
+    font-size: 1.25em;
+    outline: none;
+    top: 5px;
+    left: 390px;
+    animation: show 0s both;
+    animation-delay: 3s;
+}
+@keyframes show {
+    from { visibility: hidden;}
+    to {visibility: visible; }
+}
+.ynsubmit{
+    position: absolute;
+    border: solid;
+    border-radius: 6px;
+    background: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 15px;
+    border-color: rgb(4, 192, 4);
+    color: rgb(4, 192, 4);
+    border-width: 1px;
+    font-family: monospace;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: .3s all;
+    top: 4px;
+    left: 470px;
+    animation: show 0s both;
+    animation-delay: 3s;
+}
+.ynsubmit:hover{
+    background-color: rgb(4, 192, 4);
+    color: rgb(21, 21, 21);
+}
+.ynsubmit:active{
+    background-color: rgb(1, 110, 1);
+    border-color: rgb(1, 110, 1);
+}
+.yno{
+    font-size: 1.25em;
+    letter-spacing: 2.5px;
+    font-family: monospace;
+    border-right: 2.5px solid rgb(4, 192, 4);
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typingg 2.3s steps(16),
+    cursorr 0.3s step-end infinite alternate;
+    display: none;
+    position: absolute;
+    top: 31px;
+}
+@keyframes cursorr{
+    50% { border-color: transparent;}
+}
+@keyframes typingg{
+    from {width:0}
+}
+/*question 1*/
+.text1{
+    font-family: monospace;
+    font-size: 1.25em;
+    white-space: nowrap;
+    width: 670px;
+    overflow: hidden;
+    letter-spacing: 2.5px;
+    border-right: 2.5px solid rgb(4, 192, 4);
+    animation: 
+    typing1 7s steps(58),
+    cursor1 0.2s step-end infinite alternate;
+    position: absolute;
+    top: 40px;
+    left: 56px;
+    display: none;
+}
+@keyframes cursor1 {
+    50% { border-color: transparent;}
+}
+@keyframes typing1 {
+    from {width:0}
+}
+.c2{
+    display: inline-block;
+
+}
+.know{
+    position: absolute;
+    top: 90px;
+    left: 57px;
+    color: rgb(4, 192, 4);
+    background: none;
+    border: solid;
+    font-family: monospace;
+    font-size: 1.25em;
+    border-width: 1px;
+    border-radius: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline: 10px;
+    cursor: pointer;
+    transition: all 0.35s;
+    animation: delay 0s both;
+    animation-delay: 0s;
+}
+.know:hover{
+    background-color: rgb(4, 192, 4);
+    color: rgb(21, 21, 21);
+}
+@keyframes delay {
+    from { visibility: hidden;}
+    to {visibility: visible; }
+}
+
+.answer{
+    position: absolute;
+    top: 90px;
+    left: 58px;
+    display: none;
+    background: none;
+    border: solid;
+    color: rgb(4, 192, 4);
+    border-color: rgb(4, 192, 4);
+    padding-left: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 5px;
+    border-width: 1px;
+    outline: none;
+    font-family: monospace;
+    font-size: 1.25em;
+}
+.live{
+    position: absolute;
+    top: 120px;
+    font-family: monospace;
+    font-size: 1.25em;
+    left: 58px;
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 430px;
+    animation: 
+    live 4s steps(37),
+    spacee 0.3s step-end infinite alternate;
+    border-right: 2px solid rgb(4, 192, 4);
+    letter-spacing: 2.5px;
+}
+@keyframes spacee {
+    50% { border-color: transparent;}
+}
+@keyframes live {
+    from {width:0}
+}
+.dead{
+    position: absolute;
+    top: 120px;
+    font-family: monospace;
+    font-size: 1.25em;
+    left: 58px;
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 300px;
+    animation: 
+    live 3s steps(26),
+    spacee 0.3s step-end infinite alternate;
+    border-right: 2px solid rgb(4, 192, 4);
+    letter-spacing: 2.5px;
+}
+.submit{
+    background: none;
+    color: rgb(4, 192, 4);
+    border: solid;
+    border-color: rgb(4, 192, 4);
+    font-family: monospace;
+    font-size: 1.25em;
+    border-width: 1px;
+    border-radius: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline: 10px;
+    cursor: pointer;
+    transition: all 0.35s;
+    position: absolute;
+    top: 88px;
+    left: 270px;
+    display: none;
+}
+.submit:hover{
+    background-color: rgb(4, 192, 4);
+    color: rgb(21, 21, 21);
+}
+.submit:active{
+    background-color: rgb(1, 110, 1);
+    border-color: rgb(1, 110, 1);
+}
+/*question 2*/
+.lvl2{
+    color: rgb(4, 192, 4);
+    border-color: rgb(4, 192, 4);
+    font-family: monospace;
+    font-size: 1.25em;
+    background: none;
+    border: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline: 13px;
+    transition: all 0.3s;
+    position: absolute;
+    top: 170px;
+    left: 59px;
+    display: none;
+    cursor: pointer;
+}
+.lvl2:hover{
+    background-color: rgb(4, 192, 4);
+    color: rgb(21, 21, 21);
+}
+.lvl2:active{
+    background-color: rgb(1, 110, 1);
+    border-color: rgb(1, 110, 1);
+}
+.back{
+    font-family: monospace;
+    font-size: 1.25em;
+    border-right: 2px solid rgb(4, 192, 4);
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 153px;
+    left: 58px;
+    width: 600px;
+    animation:  
+    back 3s steps(52),
+    backspace 0.3s step-end infinite alternate;
+    display: none;
+    letter-spacing: 2.5px;
+}
+@keyframes backspace {
+    50% { border-color: transparent;}
+}
+@keyframes back {
+    from {width:0}
+}
+.q2{
+    position: absolute;
+    top: 203px;
+    left: 58px;
+    display: none;
+    background: none;
+    border: solid;
+    color: rgb(4, 192, 4);
+    border-color: rgb(4, 192, 4);
+    padding-left: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 5px;
+    border-width: 1px;
+    outline: none;
+    font-family: monospace;
+    font-size: 1.25em;
+}
+.submit1{
+    background: none;
+    color: rgb(4, 192, 4);
+    border: solid;
+    border-color: rgb(4, 192, 4);
+    font-family: monospace;
+    font-size: 1.25em;
+    border-width: 1px;
+    border-radius: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline: 10px;
+    cursor: pointer;
+    transition: all 0.35s;
+    position: absolute;
+    top: 201.5px;
+    left: 270px;
+    display: none;
+}
+.submit1:hover{
+    background-color: rgb(4, 192, 4);
+    color: rgb(21, 21, 21);
+}
+.submit1:active{
+    background-color: rgb(1, 110, 1);
+    border-color: rgb(1, 110, 1);
+}
+.live1{
+    position: absolute;
+    top: 235px;
+    font-family: monospace;
+    font-size: 1.25em;
+    left: 58px;
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 430px;
+    animation: 
+    livee 4s steps(37),
+    spaceee 0.3s step-end infinite alternate;
+    border-right: 2px solid rgb(4, 192, 4);
+    letter-spacing: 2.5px;
+}
+@keyframes spaceee {
+    50% { border-color: transparent;}
+}
+@keyframes livee {
+    from {width:0}
+}
+.dead1{
+    position: absolute;
+    top: 235px;
+    font-family: monospace;
+    font-size: 1.25em;
+    left: 58px;
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 300px;
+    animation: 
+    live 3s steps(26),
+    spacee 0.3s step-end infinite alternate;
+    border-right: 2px solid rgb(4, 192, 4);
+    letter-spacing: 2.5px;    
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;?&gt;</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Screenshot 2024-07-04 140243.png">
+</head>
+<body>
+    
+    <p id="r" class="riddler">&lt;?&gt;</p>
+    <div class="container">
+        <p id="text" class="text">Wanna play a game of mine,   Y/N?</p>
+        <input type="text" class="yn" id="yn">
+        <button onclick="yn()" class="ynsubmit" id="ynsumbit">Submit</button>
+        <p class="yno" id="yno">Come back later!</p>
+    </div>
+         <!--question 1-->
+    <div class="c2">
+        <p id="text1" class="text1">The sun is up but its dark ,not your decision to be there?</p>
+    </div>    
+    <input type="text" id="answer" class="answer">
+        <script src="script.js"></script>
+        <div class="win">
+            <p id="live" class="live">I guess u live to see another riddle.</p>
+        </div>
+
+        <div class="lose">
+            <p id="dead" class="dead">Your now a walking corpse.</p>
+        </div>
+       <button class="submit" id="submit" onclick="submit()">Submit</button>
+        <!--question 2-->
+        <button onclick="nextlvl()" class="lvl2" id="lvl2" >Next riddle</button>
+        <p class="back" id="back">You look away you die ,you never guess who they are?</p>
+        <input type="text" class="q2" id="q2">
+        <button onclick="question2()" id="submit1" class="submit1">Submit</button>
+        <p id="live1" class="live1">I guess u live to see another riddle.</p>
+        <p id="dead1" class="dead1">Your now a walking corpse.</p>
+
+
+    </body>
+</html>
+
+
+<!--
+1- make the first lvl without the "i know it" and adjust the delay to make it appear after okay button
+                                                                               /
+2- make the okay button a yes or no question and put and input to write it   \/ 
+
+3-test all and see if something needs a better change
+-->
