@@ -110,12 +110,12 @@ body{
     font-family: monospace;
     font-size: 1.25em;
     white-space: nowrap;
-    width: 690px;
+    width: 730px;
     overflow: hidden;
     letter-spacing: 2.5px;
     border-right: 2.5px solid rgb(4, 192, 4);
     animation: 
-    typing1 7s steps(62),
+    typing1 7s steps(63),
     cursor1 0.2s step-end infinite alternate;
     position: absolute;
     top: 40px;
@@ -130,7 +130,6 @@ body{
 }
 .c2{
     display: block;
-    width: 710px;
 }
 .know{
     position: absolute;
@@ -280,9 +279,9 @@ body{
     position: absolute;
     top: 153px;
     left: 58px;
-    width: 600px;
+    width: 800px;
     animation:  
-    back 3s steps(52),
+    back 8s steps(73),
     backspace 0.3s step-end infinite alternate;
     display: none;
     letter-spacing: 2.5px;
