@@ -30,7 +30,7 @@ function submit(){
     document.getElementById("r").style.top="120px"
     document.getElementById("text1").style.borderRight="none";
     
-    if(document.getElementById("answer").value === "orphanage"){
+    if(document.getElementById("answer").value === "physcopath"||document.getElementById("answer").value === "physcopaths"){
         document.getElementById("live").style.display="inline"
         document.getElementById("dead").style.display="none"
         setTimeout(lvl2, 4000)
@@ -50,7 +50,7 @@ function nextlvl(){
     document.getElementById("back").style.display="inline"
     document.getElementById("live").style.borderRight="none";
     document.getElementById("r").style.top="152px";
-    setTimeout(newlvl, 5000)
+    setTimeout(newlvl, 9500)
     document.getElementById("lvl2").style.display="none"
 }
 function lvl3(){
@@ -61,7 +61,7 @@ function newlvl(){
     document.getElementById("submit1").style.display="inline"
 }
 function question2(){
-    if(document.getElementById("q2").value === "betrayers"||document.getElementById("q2").value === "betrayer"||document.getElementById("q2").value === "Betrayers"||document.getElementById("q2").value === "Betrayer"){
+    if(document.getElementById("q2").value === "promise"||document.getElementById("q2").value === "promises"){
         document.getElementById("dead1").style.display="none"
         document.getElementById("live1").style.display="inline"
     } else {
