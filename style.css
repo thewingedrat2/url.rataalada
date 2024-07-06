@@ -115,7 +115,7 @@ body{
     letter-spacing: 2.5px;
     border-right: 2.5px solid rgb(4, 192, 4);
     animation: 
-    typing1 7s steps(58),
+    typing1 7s steps(62),
     cursor1 0.2s step-end infinite alternate;
     position: absolute;
     top: 40px;
